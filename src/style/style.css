@@ -1,0 +1,103 @@
+html{
+    box-sizing: border-box; /* Define que inclui tudo e todos os elementos, exceto a margen */
+    height: 100%; /* Preenche a página por completo */
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit; /* Herda os elementos da caixa do elemento pai, ou seja, o html */
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(320deg, #ffcd94, #ffb9fb, #9a9be6);
+    display: flex;
+    font-family: 'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.geral{
+    backdrop-filter: blur(5.5px); /* Desfoque */
+    -webkit-backdrop-filter: blur(5.5px); /* Desfoque para navegadores WebKit ... Safari */
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, .1); /*  A sombra é definida como um deslocamento horizontal de 0 pixels, um deslocamento vertical de 4 pixels, um desfoque de 30 pixels */
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, .30); /*  A sombra é definida como um deslocamento horizontal de 0 pixels, um deslocamento vertical de 4 pixels, um desfoque de 30 pixels */
+    border: 1px solid rgba(255, 255, 255, .34);
+    flex-basis: 400px; /* Esta propriedade define a largura inicial do elemento quando ele é parte de um layout flexível. Ele terá uma largura inicial de 400 pixels. */
+    height: 540px;
+    padding: 20px 35px; /* preenchimento interno do elemento como 20 pixels no topo e na parte inferior, e 35 pixels nas laterais */
+}
+
+.tela{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, .75);
+    border: 1px solid rgba(255, 255, 255, .01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, .1);
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+}
+
+.calc-button-linha{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, .75);
+    border: 1px solid rgba(255, 255, 255, .01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, .1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+}
+
+.calc-button:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, .75);
+    border: 1px solid rgba(255, 255, 255, .01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, .1);
+    color: #fff;
+    background: #ff6600;
+}
+
+.calc-button:last-child:hover{
+    background-color: inherit;
+    color: inherit;
+}
+
+.calc-button:hover{
+    background-color: inherit;
+}
+
+.calc-button:active{
+    background: #ffef78;
+}
+
+.double{
+    flex-basis: 47%;
+}
+
+.triple{
+    flex-basis: 73%;
+}
